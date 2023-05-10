@@ -19,6 +19,7 @@
                         <p>{{ $comic->series }}</p>
                         <p>{{ $comic->price }}</p>
                     </div>
+                    <button><a href="{{ route('comics.show', $comic->id )}}">dettaglio prodotto</a></button>
                 </div>
             @endforeach
         </div>
