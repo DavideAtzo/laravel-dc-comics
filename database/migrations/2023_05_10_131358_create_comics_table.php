@@ -19,11 +19,11 @@ return new class extends Migration
             $table->text('description');
             $table->text('thumb');
             $table->string('price', 6);
-            $table->string('series', 40);
+            $table->longText('series');
             $table->date('sale_date');
             $table->string('type', 25);
-            $table->string('artists', 40);
-            $table->string('writers', 40);
+            $table->longText('artists');
+            $table->longText('writers');
             $table->timestamps();
         });
     }
