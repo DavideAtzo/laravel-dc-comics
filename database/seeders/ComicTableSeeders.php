@@ -15,7 +15,7 @@ class ComicTableSeeders extends Seeder
      */
     public function run()
     {
-        $comics = config('comics');
+        $comics = config("comics");
 
         foreach ($comics as $comic) {
             $newComic = new Comic();
