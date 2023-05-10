@@ -9,6 +9,11 @@
 @endsection
 
 @section('page.main')
+    <div class="container my-4">
+        <div class="row">
+            <button><a href="{{ route('comics.create') }}">crea il tuo comic</a></button>
+        </div>
+    </div>
     <div class="container">
         <div class="row">
             @foreach ($comics as $comic)
@@ -19,7 +24,7 @@
                         <p>{{ $comic->series }}</p>
                         <p>{{ $comic->price }}</p>
                     </div>
-                    <button><a href="{{ route('comics.show', $comic->id )}}">dettaglio prodotto</a></button>
+                    <button><a href="{{ route('comics.show', $comic->id) }}">dettaglio prodotto</a></button>
                 </div>
             @endforeach
         </div>
